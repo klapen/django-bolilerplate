@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header_css_section %}
+<link rel="stylesheet" href="{% static 'css/app.css' %}">
+{% endblock header_css_section %}
+
+{% block header_scripts_section %}
+{% endblock header_scripts_section %}
+
+{% block content %}
+<h1> Hello, this is a test for templates</h1>
+<h3>{{ insert_me }}</h3>
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
