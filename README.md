@@ -7,9 +7,9 @@ Please create a virtual enviroments on a private folder, suggested ~/.venvs
 # How to use it
 
 ```sh
-$ git clone --depth=1 --branch=master git://someserver/somerepo dirformynewrepo
-$ rm -rf ./dirformynewrepo/.git
+$ django-admin startproject project_name --template=https://github.com/klapen/django-bolilerplate/archive/master.zip
 ```
+
 
 # How it works
 

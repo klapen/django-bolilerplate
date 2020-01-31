@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project_name.urls'
+ROOT_URLCONF = '{{ project_name }}.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project_name.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -112,7 +112,7 @@ STATIC_URL = '/static/'
 ##################################################################
 # Load common settings
 ##################################################################
-from project_name.settings.blacklisted_domains import *
+from {{ project_name }}.settings.blacklisted_domains import *
 
 # WARNING: To add a third party settings configurations, please
 #          add a new file
@@ -120,5 +120,5 @@ from project_name.settings.blacklisted_domains import *
 # - Append to installed apps
 #INSTALLED_APPS.append("rest_framework")
 # - Import variables
-#from project_name.settings.rest_framework import *
+#from {{ project_name }}.settings.rest_framework import *
 
