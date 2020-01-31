@@ -23,6 +23,4 @@ $ rm -rf ./dirformynewrepo/.git
 - **POSTGRES_HOST**: Database URL for remote server.
 - **POSTGRES_PORT**: Database port. Default: 5432.
 
-# Enviromental varibles for celery
-
 
